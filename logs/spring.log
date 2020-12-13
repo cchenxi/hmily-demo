@@ -1,0 +1,595 @@
+2020-12-13 11:34:38.424  INFO 5066 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 5066 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:34:38.427 DEBUG 5066 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:34:38.427  INFO 5066 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:34:39.392 DEBUG 5066 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:34:42.058 ERROR 5066 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Invalid name="org.apache.dubbo.config.ApplicationConfig#0" contains illegal character, only digit, letter, '-', '_' or '.' is legal.
+	at org.apache.dubbo.config.utils.ConfigValidationUtils.checkProperty(ConfigValidationUtils.java:592) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.utils.ConfigValidationUtils.checkName(ConfigValidationUtils.java:548) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.utils.ConfigValidationUtils.validateApplicationConfig(ConfigValidationUtils.java:388) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.checkGlobalConfigs(DubboBootstrap.java:543) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:525) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:16) [classes/:na]
+
+2020-12-13 11:45:12.446  INFO 5515 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 5515 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:45:12.450 DEBUG 5515 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:45:12.451  INFO 5515 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:45:13.504 DEBUG 5515 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:45:13.971 ERROR 5515 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:16) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:133) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:122) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:316) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:54) ~[spring-boot-autoconfigure-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_131]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_131]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 16 common frames omitted
+
+2020-12-13 11:45:21.536  INFO 5532 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 5532 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:45:21.553 DEBUG 5532 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:45:21.555  INFO 5532 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:45:22.666 DEBUG 5532 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:45:23.058 ERROR 5532 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+org.springframework.context.ApplicationContextException: Unable to start web server; nested exception is org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:156) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:545) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:16) [classes/:na]
+Caused by: org.springframework.beans.factory.BeanCreationException: Error creating bean with name 'tomcatServletWebServerFactory' defined in class path resource [org/springframework/boot/autoconfigure/web/servlet/ServletWebServerFactoryConfiguration$EmbeddedTomcat.class]: Initialization of bean failed; nested exception is java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:602) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:516) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:324) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:322) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:207) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.getWebServerFactory(ServletWebServerApplicationContext.java:210) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.createWebServer(ServletWebServerApplicationContext.java:179) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.onRefresh(ServletWebServerApplicationContext.java:153) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	... 8 common frames omitted
+Caused by: java.lang.IllegalArgumentException: ContextPath must start with '/' and not end with '/'
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.checkContextPath(AbstractServletWebServerFactory.java:133) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.server.AbstractServletWebServerFactory.setContextPath(AbstractServletWebServerFactory.java:122) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.context.properties.PropertyMapper$Source.to(PropertyMapper.java:316) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:54) ~[spring-boot-autoconfigure-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.autoconfigure.web.servlet.ServletWebServerFactoryCustomizer.customize(ServletWebServerFactoryCustomizer.java:35) ~[spring-boot-autoconfigure-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.lambda$postProcessBeforeInitialization$0(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$null$0(LambdaSafe.java:287) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$LambdaSafeCallback.invoke(LambdaSafe.java:159) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.lambda$invoke$1(LambdaSafe.java:286) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at java.util.ArrayList.forEach(ArrayList.java:1249) ~[na:1.8.0_131]
+	at java.util.Collections$UnmodifiableCollection.forEach(Collections.java:1080) ~[na:1.8.0_131]
+	at org.springframework.boot.util.LambdaSafe$Callbacks.invoke(LambdaSafe.java:286) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:72) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.web.server.WebServerFactoryCustomizerBeanPostProcessor.postProcessBeforeInitialization(WebServerFactoryCustomizerBeanPostProcessor.java:58) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.applyBeanPostProcessorsBeforeInitialization(AbstractAutowireCapableBeanFactory.java:415) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1786) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:594) ~[spring-beans-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	... 16 common frames omitted
+
+2020-12-13 11:45:44.787  INFO 5549 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 5549 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:45:44.792 DEBUG 5549 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:45:44.792  INFO 5549 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:45:46.002 DEBUG 5549 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:45:51.653 ERROR 5549 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: zookeeper not connected
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.<init>(CuratorZookeeperClient.java:83) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperTransporter.createZookeeperClient(CuratorZookeeperTransporter.java:26) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperTransporter.connect(AbstractZookeeperTransporter.java:70) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.ZookeeperTransporter$Adaptive.connect(ZookeeperTransporter$Adaptive.java) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:56) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:16) [classes/:na]
+Caused by: java.lang.IllegalStateException: zookeeper not connected
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.<init>(CuratorZookeeperClient.java:80) ~[dubbo-2.7.8.jar:2.7.8]
+	... 31 common frames omitted
+
+2020-12-13 11:46:22.365  INFO 5609 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 5609 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:46:22.371 DEBUG 5609 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:46:22.371  INFO 5609 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:46:23.472 DEBUG 5609 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:46:25.920 ERROR 5609 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/recipes/cache/TreeCacheListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763) ~[na:1.8.0_131]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362) ~[na:1.8.0_131]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:220) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.lambda$addDataListener$3(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.addDataListener(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:57) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:16) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.recipes.cache.TreeCacheListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 45 common frames omitted
+
+2020-12-13 11:56:02.826  INFO 6066 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6066 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:56:02.830 DEBUG 6066 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:56:02.830  INFO 6066 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:56:03.993 DEBUG 6066 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:56:07.133 ERROR 6066 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/recipes/cache/TreeCacheListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763) ~[na:1.8.0_131]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362) ~[na:1.8.0_131]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:220) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.lambda$addDataListener$3(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.addDataListener(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:57) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.stock.StockApplication.main(StockApplication.java:19) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.recipes.cache.TreeCacheListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 45 common frames omitted
+
+2020-12-13 11:57:57.622  INFO 6153 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6153 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:57:57.625 DEBUG 6153 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:57:57.625  INFO 6153 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:57:58.655 DEBUG 6153 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:58:01.295 ERROR 6153 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/recipes/cache/TreeCacheListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763) ~[na:1.8.0_131]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362) ~[na:1.8.0_131]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:220) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.lambda$addDataListener$3(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.addDataListener(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:57) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.stock.StockApplication.main(StockApplication.java:19) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.recipes.cache.TreeCacheListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 45 common frames omitted
+
+2020-12-13 11:58:32.608  INFO 6182 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6182 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 11:58:32.616 DEBUG 6182 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 11:58:32.617  INFO 6182 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 11:58:33.734 DEBUG 6182 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 11:58:36.063 ERROR 6182 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/CuratorFrameworkFactory
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.<init>(CuratorZookeeperClient.java:66) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperTransporter.createZookeeperClient(CuratorZookeeperTransporter.java:26) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperTransporter.connect(AbstractZookeeperTransporter.java:70) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.ZookeeperTransporter$Adaptive.connect(ZookeeperTransporter$Adaptive.java) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:56) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.stock.StockApplication.main(StockApplication.java:19) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.CuratorFrameworkFactory
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 32 common frames omitted
+
+2020-12-13 12:00:52.163  INFO 6293 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6293 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:00:52.168 DEBUG 6293 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:00:52.168  INFO 6293 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:00:53.549 DEBUG 6293 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:00:56.283 ERROR 6293 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/recipes/cache/TreeCacheListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763) ~[na:1.8.0_131]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362) ~[na:1.8.0_131]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:220) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.lambda$addDataListener$3(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.addDataListener(AbstractZookeeperClient.java:123) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:57) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:1034) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:623) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:521) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:896) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.stock.StockApplication.main(StockApplication.java:19) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.recipes.cache.TreeCacheListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 45 common frames omitted
+
+2020-12-13 12:03:15.836  INFO 6395 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6395 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:03:15.839 DEBUG 6395 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:03:15.840  INFO 6395 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:03:16.998 DEBUG 6395 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:03:19.672 ERROR 6395 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.NoClassDefFoundError: org/apache/curator/framework/recipes/cache/TreeCacheListener
+	at java.lang.ClassLoader.defineClass1(Native Method) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.defineClass(ClassLoader.java:763) ~[na:1.8.0_131]
+	at java.security.SecureClassLoader.defineClass(SecureClassLoader.java:142) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.defineClass(URLClassLoader.java:467) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.access$100(URLClassLoader.java:73) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:368) ~[na:1.8.0_131]
+	at java.net.URLClassLoader$1.run(URLClassLoader.java:362) ~[na:1.8.0_131]
+	at java.security.AccessController.doPrivileged(Native Method) ~[na:1.8.0_131]
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:361) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:220) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.remoting.zookeeper.curator.CuratorZookeeperClient.createTargetDataListener(CuratorZookeeperClient.java:52) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.lambda$addDataListener$3(AbstractZookeeperClient.java:123) ~[dubbo-2.7.7.jar:2.7.7]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.remoting.zookeeper.support.AbstractZookeeperClient.addDataListener(AbstractZookeeperClient.java:123) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfiguration.<init>(ZookeeperDynamicConfiguration.java:71) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.configcenter.support.zookeeper.ZookeeperDynamicConfigurationFactory.createDynamicConfiguration(ZookeeperDynamicConfigurationFactory.java:37) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.lambda$getDynamicConfiguration$0(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.7.jar:2.7.7]
+	at java.util.concurrent.ConcurrentHashMap.computeIfAbsent(ConcurrentHashMap.java:1660) ~[na:1.8.0_131]
+	at org.apache.dubbo.common.config.configcenter.AbstractDynamicConfigurationFactory.getDynamicConfiguration(AbstractDynamicConfigurationFactory.java:39) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.common.config.configcenter.DynamicConfiguration.getDynamicConfiguration(DynamicConfiguration.java:224) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.prepareEnvironment(DubboBootstrap.java:882) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.startConfigCenter(DubboBootstrap.java:605) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.useRegistryAsConfigCenterIfNecessary(DubboBootstrap.java:674) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.initialize(DubboBootstrap.java:511) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.bootstrap.DubboBootstrap.start(DubboBootstrap.java:744) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onContextRefreshedEvent(DubboBootstrapApplicationListener.java:59) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.spring.context.DubboBootstrapApplicationListener.onApplicationContextEvent(DubboBootstrapApplicationListener.java:52) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.apache.dubbo.config.spring.context.OneTimeExecutionApplicationContextEventListener.onApplicationEvent(OneTimeExecutionApplicationContextEventListener.java:40) ~[dubbo-2.7.7.jar:2.7.7]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.doInvokeListener(SimpleApplicationEventMulticaster.java:172) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.invokeListener(SimpleApplicationEventMulticaster.java:165) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.event.SimpleApplicationEventMulticaster.multicastEvent(SimpleApplicationEventMulticaster.java:139) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:404) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.publishEvent(AbstractApplicationContext.java:361) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.finishRefresh(AbstractApplicationContext.java:898) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.finishRefresh(ServletWebServerApplicationContext.java:162) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:554) ~[spring-context-5.2.12.RELEASE.jar:5.2.12.RELEASE]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:141) ~[spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:747) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:405) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:315) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.stock.StockApplication.main(StockApplication.java:19) [classes/:na]
+Caused by: java.lang.ClassNotFoundException: org.apache.curator.framework.recipes.cache.TreeCacheListener
+	at java.net.URLClassLoader.findClass(URLClassLoader.java:381) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:424) ~[na:1.8.0_131]
+	at sun.misc.Launcher$AppClassLoader.loadClass(Launcher.java:335) ~[na:1.8.0_131]
+	at java.lang.ClassLoader.loadClass(ClassLoader.java:357) ~[na:1.8.0_131]
+	... 46 common frames omitted
+
+2020-12-13 12:05:27.588  INFO 6497 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6497 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:05:27.591 DEBUG 6497 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:05:27.592  INFO 6497 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:05:28.839 DEBUG 6497 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:05:32.256  INFO 6497 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Started StockApplication in 5.338 seconds (JVM running for 6.534)
+2020-12-13 12:05:32.682  INFO 6497 --- [RMI TCP Connection(5)-192.168.31.186] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-13 12:05:32.703  INFO 6497 --- [RMI TCP Connection(5)-192.168.31.186] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-12-13 12:09:51.555  INFO 6738 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 6738 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:09:51.559 DEBUG 6738 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:09:51.559  INFO 6738 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:09:52.637 DEBUG 6738 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:09:55.667  INFO 6738 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Started OrderApplication in 4.936 seconds (JVM running for 5.862)
+2020-12-13 12:09:56.365  INFO 6738 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-13 12:09:56.382  INFO 6738 --- [RMI TCP Connection(4)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
+2020-12-13 12:11:23.855  INFO 6795 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 6795 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:11:23.860 DEBUG 6795 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:11:23.861  INFO 6795 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:11:25.346 DEBUG 6795 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:11:29.132  INFO 6795 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Started StockApplication in 5.781 seconds (JVM running for 6.739)
+2020-12-13 12:11:29.428  INFO 6795 --- [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-13 12:11:29.464  INFO 6795 --- [RMI TCP Connection(5)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 35 ms
+2020-12-13 12:11:47.764  INFO 6822 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 6822 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 12:11:47.768 DEBUG 6822 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 12:11:47.768  INFO 6822 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 12:11:48.762 DEBUG 6822 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 12:11:51.678  INFO 6822 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Started OrderApplication in 4.61 seconds (JVM running for 5.784)
+2020-12-13 12:11:54.781 ERROR 6822 --- [main] o.s.boot.SpringApplication               : Application run failed
+
+java.lang.IllegalStateException: Failed to execute CommandLineRunner
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:787) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.callRunners(SpringApplication.java:768) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:322) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1226) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1215) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.main(OrderApplication.java:24) [classes/:na]
+Caused by: org.apache.dubbo.rpc.RpcException: Failed to invoke the method m1 in the service io.github.cchenxi.hmily.demo.common.stock.api.StockService. Tried 3 times of the providers [192.168.31.186:20880] (1/1) from the registry 127.0.0.1:2181 on the consumer 192.168.31.186 using the dubbo version 2.7.8. Last error is: Invoke remote method timeout. method: m1, provider: dubbo://192.168.31.186:20880/io.github.cchenxi.hmily.demo.common.stock.api.StockService?anyhost=true&application=order&check=false&default=true&deprecated=false&dubbo=2.0.2&dynamic=true&generic=false&init=false&interface=io.github.cchenxi.hmily.demo.common.stock.api.StockService&metadata-type=remote&methods=m1&pid=6822&qos.enable=false&register.ip=192.168.31.186&release=2.7.8&remote.application=stock&side=consumer&sticky=false&timestamp=1607832688631, cause: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2020-12-13 12:11:53.739, end time: 2020-12-13 12:11:54.760, client elapsed: 1 ms, server elapsed: 1020 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=m1, parameterTypes=[], arguments=[], attachments={path=io.github.cchenxi.hmily.demo.common.stock.api.StockService, remote.application=order, interface=io.github.cchenxi.hmily.demo.common.stock.api.StockService, version=0.0.0}]], channel: /192.168.31.186:56481 -> /192.168.31.186:20880
+	at org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:113) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.cluster.support.AbstractClusterInvoker.invoke(AbstractClusterInvoker.java:260) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.cluster.interceptor.ClusterInterceptor.intercept(ClusterInterceptor.java:47) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.cluster.support.wrapper.AbstractCluster$InterceptorInvokerNode.invoke(AbstractCluster.java:92) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.cluster.support.wrapper.MockClusterInvoker.invoke(MockClusterInvoker.java:88) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.proxy.InvokerInvocationHandler.invoke(InvokerInvocationHandler.java:74) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.bytecode.proxy0.m1(proxy0.java) ~[dubbo-2.7.8.jar:2.7.8]
+	at io.github.cchenxi.hmily.demo.order.OrderApplication.run(OrderApplication.java:29) [classes/:na]
+	at org.springframework.boot.SpringApplication.callRunner(SpringApplication.java:784) [spring-boot-2.2.12.RELEASE.jar:2.2.12.RELEASE]
+	... 5 common frames omitted
+Caused by: java.util.concurrent.ExecutionException: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2020-12-13 12:11:53.739, end time: 2020-12-13 12:11:54.760, client elapsed: 1 ms, server elapsed: 1020 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=m1, parameterTypes=[], arguments=[], attachments={path=io.github.cchenxi.hmily.demo.common.stock.api.StockService, remote.application=order, interface=io.github.cchenxi.hmily.demo.common.stock.api.StockService, version=0.0.0}]], channel: /192.168.31.186:56481 -> /192.168.31.186:20880
+	at java.util.concurrent.CompletableFuture.reportGet(CompletableFuture.java:357) ~[na:1.8.0_131]
+	at java.util.concurrent.CompletableFuture.get(CompletableFuture.java:1915) ~[na:1.8.0_131]
+	at org.apache.dubbo.rpc.AsyncRpcResult.get(AsyncRpcResult.java:181) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.AsyncToSyncInvoker.invoke(AsyncToSyncInvoker.java:61) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.listener.ListenerInvokerWrapper.invoke(ListenerInvokerWrapper.java:78) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.monitor.support.MonitorFilter.invoke(MonitorFilter.java:89) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:83) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.dubbo.filter.FutureFilter.invoke(FutureFilter.java:51) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:83) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.filter.ConsumerContextFilter.invoke(ConsumerContextFilter.java:69) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.ProtocolFilterWrapper$1.invoke(ProtocolFilterWrapper.java:83) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.protocol.InvokerWrapper.invoke(InvokerWrapper.java:56) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.cluster.support.FailoverClusterInvoker.doInvoke(FailoverClusterInvoker.java:82) ~[dubbo-2.7.8.jar:2.7.8]
+	... 13 common frames omitted
+Caused by: org.apache.dubbo.remoting.TimeoutException: Waiting server-side response timeout by scan timer. start time: 2020-12-13 12:11:53.739, end time: 2020-12-13 12:11:54.760, client elapsed: 1 ms, server elapsed: 1020 ms, timeout: 1000 ms, request: Request [id=2, version=2.0.2, twoway=true, event=false, broken=false, data=RpcInvocation [methodName=m1, parameterTypes=[], arguments=[], attachments={path=io.github.cchenxi.hmily.demo.common.stock.api.StockService, remote.application=order, interface=io.github.cchenxi.hmily.demo.common.stock.api.StockService, version=0.0.0}]], channel: /192.168.31.186:56481 -> /192.168.31.186:20880
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture.doReceived(DefaultFuture.java:210) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture.received(DefaultFuture.java:175) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture$TimeoutCheckTask.notifyTimeout(DefaultFuture.java:298) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.remoting.exchange.support.DefaultFuture$TimeoutCheckTask.lambda$run$0(DefaultFuture.java:285) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.common.threadpool.ThreadlessExecutor.waitAndDrain(ThreadlessExecutor.java:93) ~[dubbo-2.7.8.jar:2.7.8]
+	at org.apache.dubbo.rpc.AsyncRpcResult.get(AsyncRpcResult.java:179) ~[dubbo-2.7.8.jar:2.7.8]
+	... 23 common frames omitted
+
+2020-12-13 13:30:07.418  INFO 9793 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Starting StockApplication on chenxiMacBook-Pro.local with PID 9793 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-stock/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 13:30:07.421 DEBUG 9793 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 13:30:07.421  INFO 9793 --- [main] i.g.c.hmily.demo.stock.StockApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 13:30:08.447 DEBUG 9793 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 13:30:11.481  INFO 9793 --- [main] i.g.c.hmily.demo.stock.StockApplication  : Started StockApplication in 4.603 seconds (JVM running for 5.375)
+2020-12-13 13:30:11.547  INFO 9793 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-13 13:30:11.568  INFO 9793 --- [RMI TCP Connection(2)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 20 ms
+2020-12-13 13:30:36.208  INFO 9812 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Starting OrderApplication on chenxiMacBook-Pro.local with PID 9812 (/Users/chenxi/workspaces/java/java-training/code/hmily-demo/demo-order/target/classes started by chenxi in /Users/chenxi/workspaces/java/java-training/code/hmily-demo)
+2020-12-13 13:30:36.217 DEBUG 9812 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Running with Spring Boot v2.2.12.RELEASE, Spring v5.2.12.RELEASE
+2020-12-13 13:30:36.218  INFO 9812 --- [main] i.g.c.hmily.demo.order.OrderApplication  : No active profile set, falling back to default profiles: default
+2020-12-13 13:30:37.378 DEBUG 9812 --- [main] org.apache.ibatis.logging.LogFactory     : Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2020-12-13 13:30:40.985  INFO 9812 --- [main] i.g.c.hmily.demo.order.OrderApplication  : Started OrderApplication in 5.43 seconds (JVM running for 6.206)
+2020-12-13 13:30:41.305  INFO 9812 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-13 13:30:41.322  INFO 9812 --- [RMI TCP Connection(1)-127.0.0.1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 16 ms
